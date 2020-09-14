@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+</head>
+<body>
+    
+    <button class="btn btn_primary" data-modal="modal-1">Открыть окно 1</button>
+    <button class="btn btn_primary" data-modal="modal-2">Открыть окно 2</button>
+
+    <div id="modal-1" class="modal" data-modal-state='closed'>   
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-modal-close='close'>&times;</span>
+                <h2>Шапка модального окна 1</h2>
+            </div>
+            <div class="modal-body">
+                <p>Какой-то текст в теле модального окна</p>
+                <p>Ещё другой текст...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Футер модального окна</h3>
+            </div>
+        </div>    
+    </div>
+
+    <div id="modal-2" class="modal" data-modal-state='closed'>   
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" data-modal-close='close'>&times;</span>
+                <h2>Шапка модального окна 2</h2>
+            </div>
+            <div class="modal-body">
+                <p>Какой-то текст в теле модального окна</p>
+                <p>Ещё другой текст...</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Футер модального окна</h3>
+            </div>
+        </div>    
+    </div>
+    <script>
+        alert( 'Привет, мир!' );
+      </script>
+
+    <script src="js/modal.js"></script>
+</body>
+</html>
